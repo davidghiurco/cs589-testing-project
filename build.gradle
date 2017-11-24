@@ -1,6 +1,9 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
 mainClassName = 'Driver'
 jar {
     baseName = 'account-driver'
@@ -9,9 +12,9 @@ jar {
     }
 }
 
-//run {
-//    standardInput = System.in
-//}
+// Allows jar to be run directly through a gradle task
+run {
+    standardInput = System.in
+}
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+
