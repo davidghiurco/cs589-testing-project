@@ -15,11 +15,19 @@ public class Account
 	private int x7; // CONST: minimum balance ($500)
 	private int x8; // lock number
 	private int x9; // number of pin tries
-	
+
+public final int show_locked_flag() {
+    return x2;
+} // testing oriented method
+
+public final int show_num_pin_tries() {
+    return x9;
+} // testing oriented method
+
 public final int show_balance()
 {
 	return x1;
-} //testing oriented method
+} // testing oriented method
 
 public final String show_state() { // testing oriented method
     if (x4 == -1) {
