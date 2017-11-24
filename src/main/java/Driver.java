@@ -7,6 +7,7 @@ public class Driver {
         BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
 
         String input = "initial";
+        int status = 0;
         usage();
         Account a = new Account();
         while(!input.equals("q")) {
@@ -24,7 +25,8 @@ public class Driver {
                     System.out.println("Enter account number: ");
                     int account_number = Integer.parseInt(scan.readLine());
 
-                    a.open(balance, pin, account_number);
+                    status = a.open(balance, pin, account_number);
+                    System.out.println("    The value returned by the method is: " + status);
                     break;
                 }
                 case "1": {
