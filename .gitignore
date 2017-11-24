@@ -25,4 +25,5 @@ src/cs589-testing-project.iml
 
 # Gradle
 .gradle/
+build/
 

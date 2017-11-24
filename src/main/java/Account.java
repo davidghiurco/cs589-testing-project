@@ -5,21 +5,43 @@
 
 public class Account
 {
-	private int x0;
-	private int x1;
-	private int x2;
-	private int x3;
-	private int x4;
-	private int x5;
-	private int x6;
-	private int x7;
-	private int x8;
-	private int x9;
+	private int x0; // CONST: maximum number of pin tries
+	private int x1; // balance
+	private int x2; // locked or not
+	private int x3; // pin number
+	private int x4; // state
+	private int x5; // account number
+	private int x6; // CONST: $20 fee for each transaction (withdraw, deposit) in overdrawn state
+	private int x7; // CONST: minimum balance ($500)
+	private int x8; // lock number
+	private int x9; // number of pin tries
 	
 public final int show_balance()
 {
 	return x1;
 } //testing oriented method
+
+public final String show_state() { // testing oriented method
+    if (x4 == -1) {
+        return "INITIAL";
+    }
+    if (x4 == 0) {
+        return "IDLE";
+    }
+    else if (x4 == 1) {
+        return "CHECK PIN";
+    }
+    else if (x4 == 2 && x1 >= x7) {
+        return "READY";
+    }
+    else if ((x4 == 2 && x1 < x7)) {
+        return "OVERDRAWN";
+    }
+    else if (x4 == 2 && x2 == 1) {
+        return "LOCKED";
+    }
+    return "ERROR: UNKNOWN";
+}
 
 public Account()
 {
