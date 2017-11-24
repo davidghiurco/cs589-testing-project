@@ -13,8 +13,8 @@ public class Driver {
 
         int num_calls_since_last_print = 0;
         while(!input.equals("q")) {
-            // Print reminder of the usage very 3 method invocations
-            if (num_calls_since_last_print >= 3) {
+            // Print reminder of the usage every 5 method invocations
+            if (num_calls_since_last_print >= 5) {
                 usage();
                 num_calls_since_last_print = 0;
             }
