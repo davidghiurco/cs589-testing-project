@@ -3,8 +3,7 @@
 //***********************************************
 
 
-
-public class account
+public class Account
 {
 	private int x0;
 	private int x1;
@@ -22,7 +21,7 @@ public final int show_balance()
 	return x1;
 } //testing oriented method
 
-public account()
+public Account()
 {
 	x2 = 0;
 	x4 = -1;

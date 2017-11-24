@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'Driver'
+jar {
+    baseName = 'account-driver'
+    manifest {
+        attributes 'Main-Class': 'Driver'
+    }
+}
+
+//run {
+//    standardInput = System.in
+//}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
