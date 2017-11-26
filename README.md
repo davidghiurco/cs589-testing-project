@@ -3,14 +3,14 @@
 ## Compiling and running Account class driver
 
 
-Linux:
+Linux (Requires $JAVA_HOME to be properly set, and $JAVA_HOME/bin to be in the $PATH):
 ```bash
 ./gradlew build
 
 java -jar ./build/libs/account-driver.jar
 ```
 
-Windows:
+Windows (Requires %JAVA_HOME% to be properly set, and %JAVA_HOME%/bin to be in the %PATH%):
 ```cmd
 \.gradlew.bat build
 
