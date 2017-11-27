@@ -39,15 +39,17 @@ public final String show_state() { // testing oriented method
     else if (x4 == 1) {
         return "CHECK PIN";
     }
-    else if (x4 == 2 && x1 >= x7) {
-        return "READY";
-    }
-    else if ((x4 == 2 && x1 < x7)) {
-        return "OVERDRAWN";
-    }
-    else if (x4 == 2 && x2 == 1) {
-        return "LOCKED";
-    }
+    else if (x4 == 2) {
+    	if (x2 ==1) {
+    		return "LOCKED";
+		}
+		if (x1 >= x7) {
+    		return "READY";
+		}
+		else {
+    		return "OVERDRAWN";
+		}
+	}
     return "ERROR: UNKNOWN";
 }
 

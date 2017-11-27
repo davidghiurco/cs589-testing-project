@@ -13,8 +13,8 @@ public class Driver {
 
         int num_calls_since_last_print = 0;
         while(!input.equals("q")) {
-            // Print reminder of the usage every 5 method invocations
-            if (num_calls_since_last_print >= 5) {
+            // Print reminder of the usage every 20 method invocations
+            if (num_calls_since_last_print >= 20) {
                 usage();
                 num_calls_since_last_print = 0;
             }
@@ -24,7 +24,7 @@ public class Driver {
             num_calls_since_last_print++;
             switch (input) {
                 case "0": { // open
-                    System.out.println("    Account class - Open Method\n");
+                    System.out.println("    Account class - Open Method");
 
                     System.out.println("Enter initial balance: ");
                     int balance = Integer.parseInt(scan.readLine());
@@ -38,7 +38,7 @@ public class Driver {
                     break;
                 }
                 case "1": { // deposit
-                    System.out.println("    Account class - Deposit Method\n");
+                    System.out.println("    Account class - Deposit Method");
 
                     System.out.println("Enter deposit amount: ");
                     int deposit = Integer.parseInt(scan.readLine());
@@ -48,7 +48,7 @@ public class Driver {
                     break;
                 }
                 case "2": { // withdraw
-                    System.out.println("    Account class - Withdraw Method\n");
+                    System.out.println("    Account class - Withdraw Method");
 
                     System.out.println("Enter withdraw amount: ");
                     int withdraw = Integer.parseInt(scan.readLine());
@@ -58,7 +58,7 @@ public class Driver {
                     break;
                 }
                 case "3": { // balance
-                    System.out.println("    Account class - Balance Method\n");
+                    System.out.println("    Account class - Balance Method");
 
                     status = a.balance();
                     System.out.println("    The value returned by the method is: " + status + "\n");
@@ -66,7 +66,7 @@ public class Driver {
                     break;
                 }
                 case "4": { // lock
-                    System.out.println("    Account class - Lock Method\n");
+                    System.out.println("    Account class - Lock Method");
 
                     System.out.println("Enter lock number: ");
                     int lock_number = Integer.parseInt(scan.readLine());
@@ -77,7 +77,7 @@ public class Driver {
 
                 }
                 case "5": { // unlock
-                    System.out.println("    Account class - Unlock Method\n");
+                    System.out.println("    Account class - Unlock Method");
 
                     System.out.println("Enter lock number: ");
                     int lock_number = Integer.parseInt(scan.readLine());
@@ -87,7 +87,7 @@ public class Driver {
                     break;
                 }
                 case "6": { // login
-                    System.out.println("    Account class - Login Method\n");
+                    System.out.println("    Account class - Login Method");
 
                     System.out.println("Enter account number: ");
                     int account_number = Integer.parseInt(scan.readLine());
@@ -98,7 +98,7 @@ public class Driver {
 
                 }
                 case "7": { // pin
-                    System.out.println("    Account class - Pin Method\n");
+                    System.out.println("    Account class - Pin Method");
 
                     System.out.println("Enter pin number: ");
                     int pin_number = Integer.parseInt(scan.readLine());
@@ -108,22 +108,34 @@ public class Driver {
                     break;
                 }
                 case "8": { // logout
-                    System.out.println("    Account class - Logout Method\n");
+                    System.out.println("    Account class - Logout Method");
 
                     status = a.balance();
                     System.out.println("    The value returned by the method is: " + status + "\n");;
                     break;
                 }
                 case "a": { // show_balance
-                    System.out.println("    Account class - show_balance() testing-oriented method\n");
+                    System.out.println("    Account class - show_balance() testing-oriented method");
 
                     System.out.println("        balance = " + a.show_balance());
                     break;
                 }
                 case "b": { // show_state
-                    System.out.println("    Account class - show_state() testing-oriented method\n");
+                    System.out.println("    Account class - show_state() testing-oriented method");
 
                     System.out.println("        " + a.show_state() + " state");
+                    break;
+                }
+                case "c": { // show_num_pin_tries
+                    System.out.println("    Account class - show_num_pin_tries() testing-oriented method");
+
+                    System.out.println("    Number of pin attempts: " + a.show_num_pin_tries());
+                    break;
+                }
+                case "d": { // show_locked_flag
+                    System.out.println("    Account class - show_locked_flag() testing-oriented method\n");
+
+                    System.out.println("    Flag = " + a.show_locked_flag());
                     break;
                 }
                 case "q": { // quit
@@ -152,9 +164,10 @@ public class Driver {
                      "         8. logout\n" +
                      "\n" +
                      "         Testing-related methods\n" +
-                     "         a. Show balance\n" +
-                     "         b. Show state\n" +
-                     "         c. ????\n" +
+                     "         a. show_balance\n" +
+                     "         b. show state\n" +
+                     "         c. show_num_pin_tries\n" +
+                     "         d. show_locked_flag\n" +
                      "\n" +
                      "         q. Quit Account driver"
         );
