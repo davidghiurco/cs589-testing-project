@@ -11,7 +11,7 @@ public class Account
 	private int x3; // pin number
 	private int x4; // state
 	private int x5; // account number
-	private int x6; // CONST: $20 fee for each transaction (withdraw, deposit) in overdrawn state
+	private int x6; // CONST: $20 fee for each transaction (deposit) in overdrawn state
 	private int x7; // CONST: minimum balance ($500)
 	private int x8; // lock number
 	private int x9; // number of pin tries
