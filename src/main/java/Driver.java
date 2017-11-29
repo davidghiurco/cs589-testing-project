@@ -17,11 +17,11 @@ public class Driver {
 
         int num_calls_since_last_print = 0;
         while(!input.equals("q")) {
-            // Print reminder of the usage every 20 method invocations
-            if (num_calls_since_last_print >= 20) {
-                usage();
-                num_calls_since_last_print = 0;
-            }
+            // Print reminder of the usage every 20 method invocations -- disabled
+            // if (num_calls_since_last_print >= 20) {
+                // usage();
+                // num_calls_since_last_print = 0;
+            // }
 
             System.out.print("> ");
             input = scan.readLine();
