@@ -66,7 +66,7 @@ public class Driver {
 
                     status = a.balance();
                     System.out.println("    The value returned by the method is: " + status + "\n");
-                    System.out.println("\n\n    OUTPUT: " + status);
+                    System.out.println("    OUTPUT: " + status);
                     break;
                 }
                 case "4": { // lock
