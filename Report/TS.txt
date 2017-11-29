@@ -1,0 +1,66 @@
+Test#1: open 500 1 2 login 50 login 50 login 2 logout login 2 pin 50 pin 50 pin 50 login 50 login 2 pin 1 logout login 50
+Test#2: open 400 1 2 login 2 pin 1 logout login 50 login 2 pin 50 pin 1 deposit 200 logout
+Test#3: open 500 1 2 login 2 logout login 50 login 2 pin 50 pin 50 pin 50 login 50 login 2 pin 1 logout login 2 logout
+Test#4: open 400 1 2 login 2 pin 1 logout login 2 pin 50 logout login 2 pin 50 pin 1 logout
+Test#5: open 600 1 2 login 2 pin 1 lock 3 balance unlock 3 lock 3 unlock 3 withdraw 200 balance logout
+Test#6: open 400 1 2 login 2 pin 1 lock 3 balance unlock 3 lock 3 unlock 3 balance deposit 50 balance logout
+Test#7: open 400 1 2 login 2 pin 1 lock 3 balance balance unlock 3 deposit 20 deposit 400 withdraw 400 deposit 20 balance logout
+Test#8: open 400 1 2 login 2 pin 1 deposit 20 logout login 2 pin 1 deposit 20 deposit 20 lock 3 unlock 3 logout login 2 pin 1 balance logout
+Test#9: open 400 1 2 login 2 pin 1 deposit 200 withdraw 20 withdraw 200 deposit 300 deposit 20 balance lock 3 unlock 3 withdraw 300 logout
+Test#10: open 400 1 2 login 2 pin 1 lock 3 unlock 3 logout login 2 pin 1 deposit 200 withdraw 200 balance balance lock 3 unlock 3 balance deposit 300 logout
+Test#11: open 400 1 2 login 2 pin 1 lock 3 unlock 3 deposit 200 withdraw 200 lock 3 unlock 3 deposit 300 balance withdraw 300 deposit 1 lock 3 unlock 3 
+deposit 500 logout
+Test#12: open 400 1 2 login 2 pin 1 deposit 300 lock 3 unlock 3 logout login 2 pin 1 withdraw 1 logout
+Test#13: open 600 1 2 login 2 pin 1 balance withdraw 1 lock 3 unlock 3 deposit 20 withdraw 1 deposit 1 logout
+Test#14: open 600 1 2 login 2 pin 1 deposit 1 deposit 1 withdraw 1 withdraw 1 balance balance logout
+Test#15: open 600 1 2 login 2 pin 1 withdraw 200 deposit 300 balance deposit 20 withdraw 300 deposit 400 withdraw 5 balance deposit 5 lock 3 unlock 3 
+withdraw 5 lock 3 unlock 3 balance logout
+Test#16: open 500 1 2 open 750 15 20 logout pin 1 deposit 50 withdraw 20 balance lock 3 unlock 3
+Test#17: open 500 1 2 login 2 open 750 15 20 login 2 deposit 50 withdraw 20 balance lock 3 unlock 3
+Test#18: open 500 1 2 login 2 pin 1 open 750 1 2 pin 1 login 2 unlock 3
+Test#19: open 500 1 2 login 2 pin 1 lock 3 open 750 15 20 login 2 logout pin 1 deposit 50 withdraw 20 lock 3 unlock 7
+Test#20: open 400 1 2 login 2 pin 1 open 750 15 20 login 20 pin 15 withdraw 20 unlock 3
+Test#21: open 1 2 3
+Test#22: open 1 2 -1
+Test#23: open 1 -1 3
+Test#24: open 1 -1 -1
+Test#25: open -1 2 3
+Test#26: open -1 2 -1
+Test#27: open -1 -1 3
+Test#28: open -1 -1 -1
+Test#29: open 1 1 1 open 1 2 3
+Test#30: open 1 1 1 open 1 2 -1
+Test#31: open 1 1 1 open 1 -1 3
+Test#32: open 1 1 1 open 1 -1 -1
+Test#33: open 1 1 1 open -1 1 1
+Test#34: open 1 1 1 open -1 1 -1
+Test#35: open 1 1 1 open -1 -1 3
+Test#36: open 1 1 1 open -1 -1 -1
+Test#37: open 500 1 2 login 2 pin 1 logout
+Test#38: open 500 1 2 login 2 pin 50 pin 50 pin 50
+Test#39: open 500 1 2 pin 1
+Test#40: open 1 1 1 logout
+Test#41: open 500 1 2 login 2 pin 1 lock 3 logout
+Test#42: open 500 1 2 login 2 logout
+Test#43: open 500 1 2 login 3 login 2 pin 1 login 2
+Test#44: open 500 1 2 balance login 2 pin 1 balance logout
+Test#45: open 500 1 2 login 2 pin 1 lock 3 
+Test#46: open 500 1 2 login 2 lock 3
+Test#47: open 500 1 2 lock 3
+Test#48: open 500 1 2 login 2 pin 1 lock 1
+Test#49: open 500 1 2 unlock 3
+Test#50: open 500 1 2 login 2 pin 1 lock 3 unlock 3 logout
+Test#51: open 500 1 2 login 2 pin 1 lock 3 unlock 4
+Test#52: open 500 1 2 login 2 pin 1 lock 3 unlock 3 unlock 3
+Test#53: open 500 1 2 login 2 pin 1 lock 3 unlock 3 unlock 7
+Test#54: open 500 1 2 deposit 50 login 2 pin 1 lock 3 deposit 50 unlock 3 logout
+Test#55: open 500 1 2 login 2 pin 1 deposit 50 logout
+Test#56: open 400 1 2 login 2 pin 1 deposit 50 deposit -50
+Test#57: open 500 1 2 login 2 pin 1 deposit -50 logout
+Test#58: open 600 1 2 withdraw 50 login 2 pin 1 withdraw 50 logout
+Test#59: open 400 1 2 login 2 pin 1 lock 3 withdraw 50 unlock 3 withdraw -50 logout
+Test#60: open 400 1 2 login 2 pin 1 withdraw 20 logout
+Test#61: open 500 1 2 login 2 pin 1 withdraw 20 logout
+Test#62: open 500 1 2 login 2  pin 1 withdraw 600 logout
+Test#63: open 500 1 2 login 2 pin 1 withdraw 499 withdraw -1 logout
+$$
