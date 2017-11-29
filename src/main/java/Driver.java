@@ -114,7 +114,7 @@ public class Driver {
                 case "8": { // logout
                     System.out.println("    Account class - Logout Method");
 
-                    status = a.balance();
+                    status = a.logout();
                     System.out.println("    The value returned by the method is: " + status + "\n");;
                     break;
                 }
